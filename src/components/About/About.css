@@ -7,7 +7,7 @@
   padding: 2vw;
 }
 
-/* Title Section */
+
 .about-title {
   position: relative;
   text-align: center;
@@ -29,7 +29,6 @@
   z-index: -1;
 }
 
-/* Tech Logos - Horizontal Layout */
 .logos-horizontal {
   display: flex;
   justify-content: space-around;
@@ -49,7 +48,7 @@
   font-size: 1.8vw;
   font-weight: bold;
   color: #cec2d4;
-  margin-bottom: 8vw;
+  margin-bottom: 3vw;
   text-transform: uppercase;
 }
 
@@ -76,7 +75,7 @@
   cursor: pointer;
 }
 
-/* Fullstack Section */
+
 .fullstack-section {
   display: flex;
   flex-direction: column;
@@ -87,7 +86,7 @@
 
 .section-title {
   font-size: 3vw;
-  margin-bottom: 9vw;
+  margin-bottom: 4vw;
 }
 
 .fullstack-grid {
@@ -105,47 +104,52 @@
   max-width: 180px;
 }
 
-/* Media Queries for Responsiveness */
+
 @media (max-width: 768px) {
   .about {
-    gap: 5vw;
-    padding: 5vw;
-    align-items: flex-start;
+    gap: 6vw;
+    padding: 5vw 3vw;
+    align-items: center;
   }
 
   .about-title h1 {
-    font-size: 6vw;
+    font-size: 7vw;
   }
 
   .about-title img {
-    width: 20%;
+    width: 25vw;
+    height: auto;
+    right: 10px;
   }
 
   .logos-horizontal {
     flex-direction: column;
     align-items: center;
+    gap: 6vw;
   }
 
   .tech-section h2 {
-    font-size: 5vw;
+    font-size: 5.5vw;
+    margin-bottom: 3vw;
   }
 
   .logo-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 3vw;
+    gap: 5vw;
   }
 
   .logo-grid img {
-    width: 80px;
+    max-width: 80px;
   }
 
   .section-title {
     font-size: 6vw;
+    margin-bottom: 5vw;
   }
 
   .fullstack-grid {
     flex-direction: column;
-    gap: 6vw;
+    gap: 8vw;
   }
 
   .fullstack-item {

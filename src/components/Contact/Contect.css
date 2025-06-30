@@ -12,9 +12,9 @@
 }
 .contact_title h1 {
     padding: 0px 30px;
-    font-size: 60px; /* pehle 80px tha, ab chhota kar diya */
+    font-size: 60px; 
     font-weight: 600;
-    position: relative; /* image ke relative positioning ke liye */
+    position: relative; 
 }
 
 .contact_title img {
@@ -22,8 +22,8 @@
     bottom: 0;
     right: 0;
     z-index: -1;
-    width: 150px; /* adjust kiya gaya size */
-    height: auto; /* aspect ratio maintain rahe */
+    width: 150px; 
+    height: auto; 
 }
 
 
@@ -130,26 +130,26 @@ contect-left h1{
     .contact {
         display: flex;
         flex-direction: column;
-        gap: 40px; /* Adjusted for better spacing on smaller screens */
-        margin: 20px 10px; /* Adjusted for smaller screens */
+        gap: 40px; 
+        margin: 20px 10px; 
         align-items: flex-start;
     }
 
     .contact_title h1 {
-        font-size: 32px; /* Adjusted for smaller screens */
+        font-size: 32px; 
         padding: 0;
         font-weight: 600;
     }
 
     .contact_title img {
-        width: 100px; /* Adjusted for smaller screens */
+        width: 100px; 
         margin-right: -20px;
     }
 
     .contract_section {
         display: flex;
         flex-direction: column;
-        gap: 20px; /* Added gap for better spacing */
+        gap: 20px; 
     }
 
     .contect-left {
@@ -157,23 +157,23 @@ contect-left h1{
     }
 
     .contect-left h1 {
-        font-size: 36px; /* Adjusted for smaller screens */
+        font-size: 36px; 
     }
 
     .contect-left p {
-        font-size: 16px; /* Adjusted for smaller screens */
+        font-size: 16px; 
     }
 
     .contact-details {
         display: flex;
         flex-direction: column;
-        gap: 10px; /* Added gap for better spacing */
+        gap: 10px; 
     }
 
     .contact-detail {
         display: flex;
         align-items: center;
-        gap: 10px; /* Added gap for better spacing */
+        gap: 10px; 
     }
 
     .contact-detail img {
@@ -183,27 +183,27 @@ contect-left h1{
     .contact-right {
         display: flex;
         flex-direction: column;
-        gap: 15px; /* Added gap for better spacing */
+        gap: 15px; 
     }
 
     .contact-right label {
-        font-size: 18px; /* Adjusted for smaller screens */
+        font-size: 18px; 
     }
 
     .contact-right input, .contact-right textarea {
         width: 100%;
-        font-size: 18px; /* Adjusted for smaller screens */
-        padding: 10px; /* Added padding for better user experience */
+        font-size: 18px; 
+        padding: 10px; 
     }
 
     .contact-right textarea {
-        resize: vertical; /* Allow vertical resizing */
+        resize: vertical; 
     }
 
     .contact-submit {
-        font-size: 18px; /* Adjusted for smaller screens */
-        padding: 10px 20px; /* Adjusted padding for smaller screens */
-        cursor: pointer; /* Added cursor pointer for better UX */
+        font-size: 18px; 
+        padding: 10px 20px; 
+        cursor: pointer; 
     }
 }
 .social-links a {

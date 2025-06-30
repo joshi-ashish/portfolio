@@ -1,5 +1,4 @@
 
-/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
 .hero {
   display: flex;
   align-items: center;
@@ -91,9 +90,11 @@
 .hero-resume:hover {
   border-color: #B415FF;
 }
-@media (max-width: 500px) {
+
+
+@media (max-width: 768px) {
   .hero h1 {
-    font-size: 6vw;
+    font-size: 7vw;
   }
 
   .hero p {
@@ -102,20 +103,36 @@
   }
 
   .hero img {
-    width: 50vw;
-    border-width: 2vw;
+    width: 45vw;
+    border-width: 3vw;
   }
 
   .hero_action {
     flex-direction: column;
     font-size: 4vw;
+    gap: 4vw;
+    align-items: center;
   }
 
   .hero_connect,
   .hero-resume {
-    padding: 4vw 6vw;
+    font-size: 4vw;
+    padding: 3vw 5vw;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .company-Name {
+    font-size: 5vw;
+  }
+
+  .hit {
+    font-size: 6vw;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
+
 
 .company-Name {
   background: linear-gradient(270deg, #DF8908, #B415FF);
@@ -124,20 +141,18 @@
   color: transparent;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  text-decoration: none; /* Underline hatane ke liye */
+  text-decoration: none;
   display: inline-block;
-    font-size: 1.5rem; /* <-- yeh line text bada karti hai */
-
+  font-size: 1.5rem;
 }
+
+
 .hit {
   display: inline-block;
-  font-size: 2rem; /* line ka size badhane ke liye */
+  font-size: 2rem;
   line-height: 1;
-  vertical-align: middle; /* alignment adjust karne ke liye */
-  margin-left: 8px; /* optional: spacing from text */
+  vertical-align: middle;
+  margin-left: 8px;
   margin-right: 8px;
-  color: #ffffff; /* ya koi aur color jo black background pe dikhe */
+  color: #ffffff;
 }
-
-
-
