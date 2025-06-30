@@ -1,0 +1,158 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+  padding: 2vw;
+}
+
+/* Title Section */
+.about-title {
+  position: relative;
+  text-align: center;
+}
+
+.about-title h1 {
+  padding: 0 2vw;
+  font-size: 5vw;
+  font-weight: 600;
+  position: relative;
+}
+
+.about-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8em;
+  height: 4em;
+  z-index: -1;
+}
+
+/* Tech Logos - Horizontal Layout */
+.logos-horizontal {
+  display: flex;
+  justify-content: space-around;
+  gap: 3vw;
+  padding: 2vw;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.tech-section {
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+}
+
+.tech-section h2 {
+  font-size: 1.8vw;
+  font-weight: bold;
+  color: #cec2d4;
+  margin-bottom: 8vw;
+  text-transform: uppercase;
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5vw;
+  justify-items: center;
+}
+
+.logo-grid img,
+.fullstack-item img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(185, 35, 225, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.logo-grid img:hover,
+.fullstack-item img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Fullstack Section */
+.fullstack-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 3vw;
+  margin-bottom: 9vw;
+}
+
+.fullstack-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3vw;
+  justify-content: center;
+}
+
+.fullstack-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 18vw;
+  max-width: 180px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .about {
+    gap: 5vw;
+    padding: 5vw;
+    align-items: flex-start;
+  }
+
+  .about-title h1 {
+    font-size: 6vw;
+  }
+
+  .about-title img {
+    width: 20%;
+  }
+
+  .logos-horizontal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tech-section h2 {
+    font-size: 5vw;
+  }
+
+  .logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3vw;
+  }
+
+  .logo-grid img {
+    width: 80px;
+  }
+
+  .section-title {
+    font-size: 6vw;
+  }
+
+  .fullstack-grid {
+    flex-direction: column;
+    gap: 6vw;
+  }
+
+  .fullstack-item {
+    width: 60vw;
+  }
+
+  .fullstack-item p {
+    font-size: 4vw;
+  }
+}

@@ -1,0 +1,221 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; 
+    margin: 60px 170px;
+}
+.contact_title{
+    position: relative;
+
+}
+.contact_title h1 {
+    padding: 0px 30px;
+    font-size: 60px; /* pehle 80px tha, ab chhota kar diya */
+    font-weight: 600;
+    position: relative; /* image ke relative positioning ke liye */
+}
+
+.contact_title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 150px; /* adjust kiya gaya size */
+    height: auto; /* aspect ratio maintain rahe */
+}
+
+
+.contract_section{
+    display: flex;
+    gap: 150px;
+}
+
+.contect-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+contect-left h1{
+    font-size: 80px;
+    font-weight: 700;
+    background: linear-gradient(270deg, #DF8908 80% #b415ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.contect-left p{
+    max-width:550px ;
+    color: #D8D8D8;
+    font-size: 20px;
+    line-height: 35px;
+
+
+}
+
+.contact-details{
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #D8D8D8;
+    font-size: 22px;
+}
+
+
+.contact-detail{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.contact-right{
+    display:  flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+
+.contact-right label{
+    color: #D8D8D8;
+    font-size: 22px;
+    font-weight: 500;
+
+}
+
+.contact-right input{
+    border: none;
+    width: 700px;
+    height: 78px;
+    padding-left: 20px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #A0A0A0;
+    font-size : 20px;
+}
+
+.contact-right textarea{
+    width: 650px;
+    border: none;
+    padding: 25px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #A0A0A0;
+    font-size: 20px;
+    
+}
+
+.contact-submit {
+    border: none;
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #DF8908 -5.09%, #B415ff 106.28%);
+    font-size: 22px;
+    padding: 20px 60px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-submit:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 40px; /* Adjusted for better spacing on smaller screens */
+        margin: 20px 10px; /* Adjusted for smaller screens */
+        align-items: flex-start;
+    }
+
+    .contact_title h1 {
+        font-size: 32px; /* Adjusted for smaller screens */
+        padding: 0;
+        font-weight: 600;
+    }
+
+    .contact_title img {
+        width: 100px; /* Adjusted for smaller screens */
+        margin-right: -20px;
+    }
+
+    .contract_section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Added gap for better spacing */
+    }
+
+    .contect-left {
+        text-align: left;
+    }
+
+    .contect-left h1 {
+        font-size: 36px; /* Adjusted for smaller screens */
+    }
+
+    .contect-left p {
+        font-size: 16px; /* Adjusted for smaller screens */
+    }
+
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Added gap for better spacing */
+    }
+
+    .contact-detail {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Added gap for better spacing */
+    }
+
+    .contact-detail img {
+        width: 20px; /* Adjusted for smaller screens */
+    }
+
+    .contact-right {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; /* Added gap for better spacing */
+    }
+
+    .contact-right label {
+        font-size: 18px; /* Adjusted for smaller screens */
+    }
+
+    .contact-right input, .contact-right textarea {
+        width: 100%;
+        font-size: 18px; /* Adjusted for smaller screens */
+        padding: 10px; /* Added padding for better user experience */
+    }
+
+    .contact-right textarea {
+        resize: vertical; /* Allow vertical resizing */
+    }
+
+    .contact-submit {
+        font-size: 18px; /* Adjusted for smaller screens */
+        padding: 10px 20px; /* Adjusted padding for smaller screens */
+        cursor: pointer; /* Added cursor pointer for better UX */
+    }
+}
+.social-links a {
+     font-size: 50px; 
+    color: #00f0ff;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+  }
+
+  
+  .social-links a:hover {
+    color: #00cce7;
+    transform: scale(1.30);
+
+  } 

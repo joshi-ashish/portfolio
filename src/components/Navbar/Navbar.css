@@ -1,0 +1,96 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 5vw;
+  position: relative;
+}
+
+.logoimg {
+  width: 200px;
+  height: 130px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 60px;
+  font-size: 20px;
+  transition: right 0.5s ease;
+}
+
+.nav-menu li {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-connect {
+  padding: 15px 20px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav-connect:hover {
+  transform: scale(1.05);
+}
+
+.anchor-link {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-mob-open,
+.nav-mob-close {
+  display: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-connect {
+    display: none;
+  }
+
+  .nav-mob-open {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    right: -350px;
+    background-color: #1F0016;
+    width: 80vw;
+    max-width: 350px;
+    height: 100vh;
+    padding-top: 60px;
+    z-index: 1000;
+  }
+
+  .nav-menu.open {
+    right: 0;
+  }
+
+  .nav-mob-close {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .nav-menu li {
+    font-size: 26px;
+    gap: 10px;
+  }
+}

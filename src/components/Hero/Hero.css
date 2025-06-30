@@ -1,0 +1,143 @@
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3vw;
+  padding: 3vw 5vw;
+}
+
+.hero img {
+  width: 25vw;
+  max-width: 400px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 30px 10px rgba(185, 35, 225, 0.7);
+  border: 0.8vw solid #0c1a25;
+  transition: transform 0.35s ease;
+}
+
+.hero img:hover {
+  transform: scale(1.1);
+  cursor: default;
+}
+
+.hero h1 {
+  text-align: center;
+  font-size: 4vw;
+  font-weight: 600;
+  line-height: 1.4;
+  width: 100%;
+  max-width: 900px;
+}
+
+.hero h1 span {
+  background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.hero p {
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  font-size: 2vw;
+  line-height: 2.4vw;
+}
+
+.hero_action {
+  display: flex;
+  gap: 2vw;
+  font-size: 1.2vw;
+  font-weight: 500;
+  margin-top: 2vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero_connect,
+.hero-resume {
+  padding: 1vw 2.5vw;
+  border-radius: 50px;
+  font-size: 1.2vw;
+  text-align: center;
+  cursor: pointer;
+  transition: border 0.3s ease;
+}
+
+.hero_connect {
+  background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+  color: white;
+}
+
+.hero-resume {
+  border: 2px solid #FFF;
+}
+
+.resume-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: inherit;
+}
+
+.hero_connect:hover {
+  border: 2px solid white;
+}
+
+.hero-resume:hover {
+  border-color: #B415FF;
+}
+@media (max-width: 500px) {
+  .hero h1 {
+    font-size: 6vw;
+  }
+
+  .hero p {
+    font-size: 4vw;
+    line-height: 1.6;
+  }
+
+  .hero img {
+    width: 50vw;
+    border-width: 2vw;
+  }
+
+  .hero_action {
+    flex-direction: column;
+    font-size: 4vw;
+  }
+
+  .hero_connect,
+  .hero-resume {
+    padding: 4vw 6vw;
+  }
+}
+
+.company-Name {
+  background: linear-gradient(270deg, #DF8908, #B415FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-decoration: none; /* Underline hatane ke liye */
+  display: inline-block;
+    font-size: 1.5rem; /* <-- yeh line text bada karti hai */
+
+}
+.hit {
+  display: inline-block;
+  font-size: 2rem; /* line ka size badhane ke liye */
+  line-height: 1;
+  vertical-align: middle; /* alignment adjust karne ke liye */
+  margin-left: 8px; /* optional: spacing from text */
+  margin-right: 8px;
+  color: #ffffff; /* ya koi aur color jo black background pe dikhe */
+}
+
+
+
