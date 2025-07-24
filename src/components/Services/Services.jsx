@@ -19,7 +19,7 @@ function Services() {
             <p>{service.s_desc}</p>
             <div className="services-readmone">
               <p>Read more</p>
-              <a href="/files/internship.pdf">
+              <a href="/files/Internships.pdf" target="_blank" rel="noopener noreferrer">
               <img src={arrow_icon} alt="" />
               </a>
             </div>
